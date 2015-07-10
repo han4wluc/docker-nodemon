@@ -6,4 +6,6 @@ RUN npm install -g nodemon
 
 WORKDIR /app
 
-CMD npm install --production; npm start
+CMD rm nodemon.json;
+    npm install --production --verbose;
+    npm start
